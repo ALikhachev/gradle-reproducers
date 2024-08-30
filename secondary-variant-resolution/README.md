@@ -2,6 +2,8 @@
 
 ## Secondary variant cannot be selected without matching with the primary variant
 
+Gradle issue: https://github.com/gradle/gradle/issues/30366
+
 ### Steps to reproduce
 
 * Invoke `./gradlew myTask`
@@ -20,6 +22,8 @@ Could not determine the dependencies of task ':myTask'.
 You will see that consumer is compatible with primary variant, but selects the secondary variant.
 
 ## Dependency insight gives a wrong match for secondary variants
+
+Gradle issue: https://github.com/gradle/gradle/issues/30365
 
 ### Steps to reproduce
 
@@ -41,6 +45,8 @@ Also, for some reason you will see `myResolvableConfiguration` there, however, i
 ```
 
 ## Secondary variants cannot be registered
+
+Gradle issue: https://github.com/gradle/gradle/issues/30367
 
 ### Steps to reproduce
 
